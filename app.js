@@ -33,7 +33,8 @@ app.post("/newTask", (req, res) => {
     db.push(req.body);
     console.log(db);
     
-    res.render("addtask.html", { task: db});
+    //res.render("addtask.html", { task: db});
+    res.redirect('/alltasks.html')
 });
 
 app.listen(8080);
